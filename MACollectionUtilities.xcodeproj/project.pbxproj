@@ -11,6 +11,9 @@
 		4A21A2581BDBB3EC005235F2 /* MACollectionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F271AD12639D0800390827 /* MACollectionUtilities.m */; };
 		4A21A2811BDBB888005235F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F271B012639D0D00390827 /* main.m */; };
 		4A21A2821BDBB88A005235F2 /* MACollectionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F271AD12639D0800390827 /* MACollectionUtilities.m */; };
+		4A21A3991BDC4427005235F2 /* UniversalFramework_Base.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A21A3941BDC4427005235F2 /* UniversalFramework_Base.xcconfig */; };
+		4A21A39A1BDC4427005235F2 /* UniversalFramework_Framework.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A21A3951BDC4427005235F2 /* UniversalFramework_Framework.xcconfig */; };
+		4A21A39B1BDC4427005235F2 /* UniversalFramework_Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4A21A3961BDC4427005235F2 /* UniversalFramework_Test.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +34,9 @@
 		4A21A2531BDBB3D1005235F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A21A26A1BDBB7AC005235F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A21A27A1BDBB87A005235F2 /* MACollectionUtilitiesTests */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MACollectionUtilitiesTests; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A21A3941BDC4427005235F2 /* UniversalFramework_Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Base.xcconfig; sourceTree = "<group>"; };
+		4A21A3951BDC4427005235F2 /* UniversalFramework_Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Framework.xcconfig; sourceTree = "<group>"; };
+		4A21A3961BDC4427005235F2 /* UniversalFramework_Test.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = UniversalFramework_Test.xcconfig; sourceTree = "<group>"; };
 		C2F271AC12639D0800390827 /* MACollectionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MACollectionUtilities.h; sourceTree = SOURCE_ROOT; };
 		C2F271AD12639D0800390827 /* MACollectionUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MACollectionUtilities.m; sourceTree = SOURCE_ROOT; };
 		C2F271B012639D0D00390827 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ../main.m; sourceTree = "<group>"; };
@@ -66,6 +72,7 @@
 				4A21A2501BDBB3D1005235F2 /* MACollectionUtilities */,
 				4A21A25E1BDBB7AC005235F2 /* MACollectionUtilitiesTests */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
+				4A21A3911BDC4427005235F2 /* xcconfigs */,
 			);
 			name = MACollectionUtilities;
 			sourceTree = "<group>";
@@ -104,6 +111,16 @@
 				4A21A26A1BDBB7AC005235F2 /* Info.plist */,
 			);
 			path = MACollectionUtilitiesTests;
+			sourceTree = "<group>";
+		};
+		4A21A3911BDC4427005235F2 /* xcconfigs */ = {
+			isa = PBXGroup;
+			children = (
+				4A21A3941BDC4427005235F2 /* UniversalFramework_Base.xcconfig */,
+				4A21A3951BDC4427005235F2 /* UniversalFramework_Framework.xcconfig */,
+				4A21A3961BDC4427005235F2 /* UniversalFramework_Test.xcconfig */,
+			);
+			path = xcconfigs;
 			sourceTree = "<group>";
 		};
 		C6859EA2029092E104C91782 /* Documentation */ = {
@@ -205,6 +222,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A21A3991BDC4427005235F2 /* UniversalFramework_Base.xcconfig in Resources */,
+				4A21A39B1BDC4427005235F2 /* UniversalFramework_Test.xcconfig in Resources */,
+				4A21A39A1BDC4427005235F2 /* UniversalFramework_Framework.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +278,7 @@
 		};
 		4A21A2551BDBB3D1005235F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A21A3951BDC4427005235F2 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -313,6 +334,7 @@
 		};
 		4A21A2561BDBB3D1005235F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A21A3951BDC4427005235F2 /* UniversalFramework_Framework.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -364,6 +386,7 @@
 		};
 		4A21A27F1BDBB87A005235F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A21A3961BDC4427005235F2 /* UniversalFramework_Test.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -402,6 +425,7 @@
 		};
 		4A21A2801BDBB87A005235F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A21A3961BDC4427005235F2 /* UniversalFramework_Test.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
